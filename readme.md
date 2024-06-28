@@ -26,14 +26,14 @@ EasyMCSL 是一个简易的 Minecraft 服务器启动和管理工具，旨在帮
 
 确保你已经安装了 Python，并使用以下命令安装所需的依赖库：
 
-sh
+   '''sh
 复制代码
 pip install requests
 运行工具
 
 使用以下命令运行工具：
 
-sh
+   '''sh
 复制代码
 python easymcsl.py
 操作说明
@@ -67,7 +67,7 @@ online-mode：是否开启正版验证（true/false）
 
 APP ID
 密钥
-这些信息已经在代码中预置。如果你需要更改，请在 baidu_translate 函数中更新 app_id 和 secret_key。
+这些信息已经删除。如果你需要使用百度翻译，请先去百度翻译官网申请免费api后,在 baidu_translate 函数中更新 app_id 和 secret_key。
 
 贡献
 
