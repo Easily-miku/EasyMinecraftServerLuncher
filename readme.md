@@ -22,21 +22,19 @@ EasyMCSL 是一个简单易用的 Minecraft 服务器管理工具，旨在帮助
 
 你可以通过以下命令安装所需的依赖项：
 
-bash
+```bash
 pip install requests tqdm
 下载源码
 你可以通过以下命令克隆本项目：
-
-bash
+```
+```bash
 复制代码
 git clone https://github.com/yourusername/EasyMCSL.git
 cd EasyMCSL
+```
+```bash
 使用方法
-
 运行主脚本以启动工具：
-
-bash
-复制代码
 python main.py
 在主菜单中，你可以选择以下选项：
 
@@ -49,8 +47,10 @@ python main.py
 关闭软件
 启动服务器
 选择启动服务器选项后，工具将根据配置文件中的设置启动 Minecraft 服务器。如果配置文件不存在，系统会提示你先进行配置。
+```
 
-配置服务器
+## 配置服务器
+```bash
 进入配置服务器菜单后，你可以设置服务器的启动参数，例如内存大小和优化代码。配置完成后会保存到 server_config.json 文件中。
 
 具体操作步骤：
@@ -59,8 +59,9 @@ python main.py
 输入启动内存大小（例如1024M）。
 输入启动优化代码（例如 -XX:+UseG1GC）。
 配置完成后，工具会显示当前的配置，并保存到 server_config.json 文件中。
-
-服务器文件
+```
+## 服务器文件
+```bash
 在服务器文件菜单中，你可以：
 
 查看模组列表
@@ -76,8 +77,8 @@ python main.py
 工具会自动下载并显示下载进度。
 显示信息
 选择此选项可以查看工具的开发者信息和其他相关信息。
-
-翻译
+```
+## 翻译
 工具集成了百度翻译功能，但默认的 APP ID 和密钥已被删除。请自行注册百度翻译 API 并在代码中添加你的 APP ID 和密钥。
 
 具体操作步骤：
@@ -86,8 +87,7 @@ python main.py
 注册并获取 APP ID 和密钥。
 在代码中的 baidu_translate 函数中添加你的 APP ID 和密钥。
 修改代码如下：
-
-python
+```python
 复制代码
 def baidu_translate(query, from_lang='en', to_lang='zh'):
     app_id = '你的 APP ID'
@@ -123,13 +123,15 @@ def baidu_translate(query, from_lang='en', to_lang='zh'):
     except json.JSONDecodeError as e:
         print(f'[错误] 解析翻译响应时发生错误：{e}')
         return None
-开发者
+```
+
+## 开发者
 
 QQ: 1502271252
 贡献
 
 欢迎贡献代码和提出建议！请提交 pull request 或在 issues 中反馈问题。
 
-许可证
+## 许可证
 
 本项目采用 MIT 许可证。详情请参见 LICENSE 文件。
