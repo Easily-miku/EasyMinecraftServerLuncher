@@ -22,7 +22,7 @@ EasyMCSL 是一个简单易用的 Minecraft 服务器管理工具，旨在帮助
 
 你可以通过以下命令安装所需的依赖项：
 
-```bash
+bash
 pip install requests tqdm
 下载源码
 你可以通过以下命令克隆本项目：
